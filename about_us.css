@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+
+.navbar-links a.active {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Header Section */
+.about-header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #ddd;
+}
+
+.about-header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.about-header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Mission Section */
+.mission, .how-it-works, .impact, .cta {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.mission h2, .how-it-works h2, .impact h2, .cta h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* How It Works */
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.step {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 30%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.step h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Impact Section */
+.impact p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Call to Action */
+.cta-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}

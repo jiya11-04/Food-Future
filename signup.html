@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Food Future</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <h1>Food Future</h1>
+            </div>
+            <div class="navbar-links">
+                <a href="index.html">Home</a>
+                <a href="about_us.html" class="active">About Us</a>
+                <a href="contribute.html">How To Contribute</a>
+                <a href="faq.html">FAQ</a>
+                <a href="signup.html">Sign-Up</a>
+                <a href="logout.html">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sign Up Form Section -->
+    <section class="signup-section">
+        <div class="container">
+            <h2>Sign Up</h2>
+            <form action="signup-action.php" method="POST" class="form-container">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Food Future</p>
+    </footer>
+</body>
+</html>

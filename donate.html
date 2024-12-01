@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Funds - Food Future</title>
+    <link rel="stylesheet" href="donate.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <h1>Food Future.</h1>
+            </div>
+            <div class="navbar-links">
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="contribute.html">How to Contribute</a>
+                <a href="faq.html">FAQ</a>
+                <!-- <a href="volunteer.html">Join as a Volunteer</a> -->
+                <!-- <a href="impact.html">Impact Stories</a>
+                <a href="partners.html">Our Partners</a>
+                <a href="contact.html">Contact Us</a> -->
+                <!-- <a href="donate.html" class="active">Donate Funds</a> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="donate-header">
+        <h1>Donate Funds</h1>
+        <p>Support Our Mission to Reduce Food Waste and Feed Those in Need.</p>
+    </header>
+
+    <!-- Donate Form -->
+    <main>
+        <section class="donate-form">
+            <form action="/submit-donation" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+                <label for="amount">Donation Amount (INR):</label>
+                <div class="donation-options">
+                    <!-- <label><input type="radio" name="amount" value="10" required> $10</label>
+                    <label><input type="radio" name="amount" value="20"> $20</label>
+                    <label><input type="radio" name="amount" value="50"> $50</label>
+                    <label><input type="radio" name="amount" value="100"> $100</label> -->
+                    <label><input type="radio" name="amount" value="custom">
+                        <input type="number" id="custom-amount" name="custom_amount" placeholder="Custom Amount">
+                    </label>
+                </div>
+
+                <label for="message">Your Message (Optional):</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message"></textarea>
+
+                <button type="submit">Donate Now</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Food Future. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

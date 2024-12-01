@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up to Donate - Food Future</title>
+    <link rel="stylesheet" href="donate-signup.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <h1>Food Future.</h1>
+            </div>
+            <div class="navbar-links">
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="contribute.html" class="active">How to Contribute</a>
+                <!-- <a href="impact.html">Impact Stories</a>
+                <a href="partners.html">Our Partners</a>
+                <a href="contact.html">Contact Us</a> -->
+                <a href="faq.html">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="signup-header">
+        <h1>Sign Up to Donate</h1>
+        <p>Join Us in Making a Difference.</p>
+    </header>
+
+    <!-- Sign-Up Form -->
+    <main>
+        <section class="signup-form">
+            <form action="/submit-donation" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+                <label for="donation-type">Type of Donation:</label>
+                <select id="donation-type" name="donation_type" required>
+                    <option value="food">Food</option>
+                    <option value="money">Money</option>
+                    <option value="time">Volunteer Time</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="description">Additional Information:</label>
+                <textarea id="description" name="description" rows="4" placeholder="Details about your donation"></textarea>
+
+                <label for="address">Pickup Address (Optional):</label>
+                <input type="text" id="address" name="address" placeholder="Your Address">
+
+                <label for="contact-method">Preferred Contact Method:</label>
+                <select id="contact-method" name="contact_method" required>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                </select>
+
+                <button type="submit">Sign Up to Donate</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Food Future. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

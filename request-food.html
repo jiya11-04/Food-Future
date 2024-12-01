@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Surplus Food</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
+    <link rel="stylesheet" href="request-food.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <h1>Food Future</h1>
+            </div>
+            <div class="navbar-links">
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="contribute.html" class="active">How to Contribute</a>
+                <a href="faq.html">FAQ</a>
+                <!-- <a href="list-food.html">List Food</a>
+                <a href="request-food.html">Request Food</a>
+                <a href="contact.html">Contact</a> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Request Form Section -->
+    <section class="request-food">
+        <div class="container">
+            <h2>Request Surplus Food</h2>
+            <p>Fill out the form below to request surplus food in your area.</p>
+            <form action="submit-request.php" method="POST" class="form-container">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="location">Pickup Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter the pickup location" required>
+
+                <label for="food-type">Food Type Needed:</label>
+                <textarea id="food-type" name="food_type" rows="4" placeholder="Specify the type of food needed" required></textarea>
+
+                <button type="submit" class="btn btn-primary">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Food Future. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
